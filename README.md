@@ -19,7 +19,7 @@ bash train_lora.sh
 
 The LoRA weights will be saved in the `./checkpoints/lora` folder, while the merged complete weights will be saved in the `./checkpoints/model` folder. Then the chat interface will be entered.
 
-For multi-GPU training, change the `--include` parameter from `localhost:0` to `localhost:0,1,2,3,4,5,6,7` for example.
+For multi-GPU training, change the `--include` parameter in `train_lora.sh` from `localhost:0` to `localhost:0,1,2,3,4,5,6,7` for example.
 
 **Important Note:** The parameters in `train_lora.sh` should be changed for better performance. Such a large learning rate is not suitable for fine-tuning. It is only used here for quick validation purposes. You can refer to the [default fine-tunging settings](https://github.com/lm-sys/FastChat/blob/main/docs/training.md#fine-tuning-using-qlora) of FastChat.
 
